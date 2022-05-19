@@ -1,4 +1,5 @@
 import React from 'react'
+import Sidebar from '../Components/Sidebar'
 
 const iterableObj = [
     {
@@ -27,12 +28,12 @@ const iterableObj = [
 const Tshirt = () => {
     return (
         <div>
-
+            <Sidebar />
             <section className="text-gray-600 body-font">
                 <div className="container px-5 py-24 mx-auto">
-                    <div className="flex flex-wrap -m-4">
+                    <div className="flex flex-wrap -m-4 space-x-10">
                         {iterableObj.map(item => (
-                            <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
+                            <div className="lg:w-1/4 md:w-1/2 p-4 w-full shadow-lg">
                                 <a className="block relative h-96 rounded overflow-hidden">
                                     <img alt="ecommerce" className="object-cover object-center w-full h-full block m-auto" src={item.image} />
                                 </a>
